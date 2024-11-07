@@ -8,7 +8,7 @@ public class FVCalc {
 		Integer appresheatedValue = (int) (currentValue * (Math.pow(1 + intrestPrecenage, numberOfYears)));
 		System.out.println(
 				"After " + numberOfYears
-						+ " years, " + currentValue +
-						"saved at " + intrestPrecenage + " will yield $" + appresheatedValue);
+						+ " years, a $" + currentValue +
+						" saved at " + intrestRate + "% will yield $" + appresheatedValue);
 	}
 }
