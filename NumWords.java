@@ -2,7 +2,8 @@
 public class NumWords {
 	public static void main(String args[]) {
 		String[] numbers = args[0].split("");
-		switch (numbers.length) {
+		Integer arrayLangth = numbers.length;
+		switch (arrayLangth) {
 			case 1:
 				System.out.println("0 hundreds, 0 tens, and " + numbers[0] + " ones.");
 				break;
@@ -12,6 +13,11 @@ public class NumWords {
 			case 3:
 				System.out.println(numbers[0] + " hundreds, " + numbers[1] + " tens, and " + numbers[2] + " ones.");
 				break;
+			default:
+				System.out.println(numbers[arrayLangth - 3] + " hundreds, " + numbers[arrayLangth - 2] + " tens, and "
+						+ numbers[arrayLangth - 1] + " ones.");
+				break;
+
 		}
 	}
 }
