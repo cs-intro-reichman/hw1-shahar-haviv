@@ -14,8 +14,9 @@ public class NumWords {
 				System.out.println(numbers[0] + " hundreds, " + numbers[1] + " tens, and " + numbers[2] + " ones.");
 				break;
 			default:
-				System.out.println(numbers[arrayLangth - 3] + " hundreds, " + numbers[arrayLangth - 2] + " tens, and "
-						+ numbers[arrayLangth - 1] + " ones.");
+				System.out.println(
+						args[0].substring(0, arrayLangth - 2) + " hundreds, " + numbers[arrayLangth - 2] + " tens, and "
+								+ numbers[arrayLangth - 1] + " ones.");
 				break;
 
 		}
